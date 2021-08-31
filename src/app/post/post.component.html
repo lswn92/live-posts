@@ -1,0 +1,12 @@
+<h2> {{ post?.title }}</h2>
+<p>
+    {{ post?.description}}
+</p>
+<img src="{{ post?. imagePath}}" class="img-responsive"/>
+<p>Author : {{ post?.author}}</p>
+<p>Date : {{post?.datetimeCreated}}</p>
+<p>Likes : {{post?.numberOfLikes}}</p>
+<button class="btn btn-success" (click)="onEdit()">Edit</button>
+ | 
+ <button class="btn btn-danger" (click) = "onDelete()">Delete</button>
+

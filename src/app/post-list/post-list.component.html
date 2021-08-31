@@ -1,0 +1,12 @@
+<h1>Latest post!</h1>
+  <app-post 
+    *ngFor="let post of listOfPosts; index as i;" 
+    [post] = "post" 
+    [index]="i">
+  </app-post>
+
+  <!-- <app-post 
+  *ngFor="let post of listOfPosts; let i = index;" 
+  [post] = "post" 
+  [index]="i">
+</app-post> -->
